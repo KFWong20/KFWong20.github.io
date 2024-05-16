@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JTK Travel Website</title>
+  <link rel="stylesheet" href="Home_style.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+<body> 
+  
+  <header>
+    <div class="container">
+      <div class="nav_bar">
+        <div class="logo">
+          <img src="Picture/Tour_Travel_Business_Logo-removebg-preview.png" alt="JTK Travel Sdn Bhd">
+          <h4>JTK Travel Sdn Bhd</h4>
+        </div>
+
+          <div class="menu_list">
+            <a href="Login.html">Login</a>
+            <a href="Package.html">Plan</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="ContactUs.html">Contact Us</a>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="home_section">
+    <div class="backgroud">
+      <div class="container">
+        <div class="home">
+          <h1><span>meet</span> people <br>explore <span>places</span> <br><span>discover</span> new horizon</h1>
+
+          <div class="home_buttons">
+            <button id="myBtn"><i class="fas fa-play"></i>  Video</button>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+               <iframe width="1200" height="575" src="Video/Sequence 01.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="display: flex; justify-content: center;" class="services">
+    <div class="container">
+
+      <div class="title">
+        <h1>Best Places Visit In <span>Malaysia</span></h1>
+        <span class="slogan">Enjoy your trip.</span>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://img.freepik.com/free-photo/beautiful-architecture-building-exterior-city-kuala-lumpur-skyline_74190-9949.jpg?w=1060&t=st=1682228785~exp=1682229385~hmac=083b5e741a4b8157c2b5ef838e3469073a1c854a49a5f459140a875cbf082418" alt="KLCC" style="width:400px;height:350px;">
+          </div>
+          <div class="flip-card-back">
+            <h1><u>Kuala Lumpur City Centre</u></h1> 
+            <p>KLCC in Kuala Lumpur, Malaysia is a must-visit destination featuring the iconic Petronas Twin Towers, a shopping mall, park, concert hall, and convention center. The towers offer stunning views, while the mall houses over 300 brands. The park features a jogging track and fountain shows, and the convention center hosts various events. The Dewan Filharmonik Petronas concert hall is renowned for its acoustics. KLCC is a hub of modern architecture, entertainment, shopping, and culture in Kuala Lumpur.</p> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://media.istockphoto.com/id/1436067704/photo/aerial-view-of-resorts-world-genting-malaysias-premier-integrated-resort-destination-and-the.jpg?s=612x612&w=0&k=20&c=curcsWzy1C7qizxqLsRkuoBemRldWvzw9zRLzB67XSU=" alt="Genting Hightland Resort" style="width:400px;height:350px;">
+          </div>
+          <div class="flip-card-back">
+            <h1><u>Genting Hightland Resort</u></h1> 
+            <p>Genting Highlands Resort is a popular destination in Malaysia, located approximately an hour's drive from Kuala Lumpur. The resort features several hotels, a casino, theme parks, an indoor and outdoor entertainment center, and a variety of dining options. With cooler temperatures and scenic views, it offers a refreshing escape from the city. The resort is a favorite among locals and tourists alike, offering a fun-filled and memorable experience for all ages.</p> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://img.freepik.com/free-photo/golden-statue-batu-caves-kuala-lumpur_333098-3.jpg?w=1060&t=st=1682228709~exp=1682229309~hmac=2e2fd6209897fe039ccf5b91f77cf6fc42a1d76eac68585e50157fe809f26f01" alt="Batu Cave" style="width:400px;height:350px;">
+          </div>
+          <div class="flip-card-back">
+            <h1><u>Batu Cave</u></h1> 
+            <p>Batu Caves in Malaysia is a popular tourist destination known for its massive limestone cave system and Hindu shrines. The main attraction is the 140-foot-tall golden statue of Lord Murugan, which visitors can climb 272 steps to reach. Inside the cave, visitors can marvel at the intricate cave formations and observe monkeys living in the area. The annual Thaipusam festival is also celebrated here, drawing large crowds. Batu Caves is a unique and fascinating place to visit for anyone exploring Malaysia.</p> 
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Work+Sans:ital,wght@0,400;0,500;1,300&display=swap');
+a, h1,p {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container2{
+  width: auto;
+  margin: auto;
+}
+.nav_bar{
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.logo img{
+  margin-right: 10px;
+  height: 100px;
+}
+/* menu list style */
+.menu_list a{
+  margin: 1.2rem;
+  font-size: 16px;
+}
+.menu_list a:hover{
+  color: #000;
+}
+.bg{
+    background-image: url('https://img.freepik.com/free-vector/engraving-hand-drawn-tropical-leaves-background_23-2148961423.jpg?w=1060&t=st=1682310381~exp=1682310981~hmac=df575a72373741245500ff287b37b62cb0ce03d51e9f8a13ba90c5c83facdd42');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* price style*/
+body{
+    background-image: url('https://img.freepik.com/free-vector/engraving-hand-drawn-tropical-leaves-background_23-2148961423.jpg?w=1060&t=st=1682310381~exp=1682310981~hmac=df575a72373741245500ff287b37b62cb0ce03d51e9f8a13ba90c5c83facdd42');
+    margin-top:20px;}
+
+/* ===== PRICING PAGE ===== */
+.price-tabs {
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 20px 0 rgba(39, 39, 39, 0.1);
+          box-shadow: 0 5px 20px 0 rgba(39, 39, 39, 0.1);
+  display: inline-block;
+  padding: 7px;
+  border-radius: 40px;
+  border: 1px solid #00b5ec;
+  margin-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+  .price-tabs {
+    margin-bottom: 60px;
+  }
+}
+
+.price-tabs .nav-link {
+  color: #00b5ec;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 12px 35px;
+  display: inline-block;
+  text-transform: capitalize;
+  border-radius: 40px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .price-tabs .nav-link {
+    padding: 12px 40px;
+  }
+}
+
+.price-tabs .nav-link.active {
+  background-color: #00b5ec;
+  color: #fff;
+}
+
+.price-item {
+  background-color: #0C2D48;
+  -webkit-box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.15);
+          box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.15);
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .price-item {
+    margin: 0 20px;
+    padding-top: 20px;
+  }
+}
+
+.price-item .price-top {
+  -webkit-box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.15);
+          box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.15);
+  padding: 50px 0 25px;
+  background-color: #f7a400;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 33px;
+}
+
+@media (min-width: 768px) {
+  .price-item .price-top {
+    margin: 0 -20px;
+    border-radius: 20px;
+  }
+}
+
+.price-item .price-top:after {
+  height: 50px;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  background-color: #f7a400;
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -17px;
+  z-index: -1;
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+  -webkit-box-shadow: 0 5px 10px 0 rgba(113, 113, 113, 0.15);
+          box-shadow: 0 5px 10px 0 rgba(113, 113, 113, 0.15);
+}
+
+@media (min-width: 768px) {
+  .price-item .price-top:after {
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+.price-item .price-top * {
+  color: #fff;
+}
+
+.price-item .price-top h2 {
+  font-weight: 700;
+}
+
+.price-item .price-top h2 sup {
+  top: 13px;
+  left: -5px;
+  font-size: 0.35em;
+  font-weight: 500;
+  vertical-align: top;
+}
+
+.price-item .price-content {
+  padding: 30px;
+  padding-bottom: 40px;
+}
+
+.price-item .price-content li {
+  position: relative;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .price-item .price-content li {
+    padding-left: 28px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .price-item .price-content li i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+  }
+}
+
+.price-item .price-content .zmdi-check {
+  color: gold;
+}
+
+.price-item .price-content .zmdi-close {
+  color: #f00;
+}
+
+.popular {
+  background-color: #f7a400;
+}
+
+.popular .price-top {
+  background-color: #0C2D48;
+}
+
+.popular .price-top:after {
+  background-color: #0C2D48;
+}
+
+.popular .price-top h4 {
+  color: white;
+}
+
+.popular .price-top h2, .popular .price-top span, .popular .price-top sup {
+  color: white;
+}
+
+.popular .price-content ul *,
+.popular .price-content ul .zmdi-close, .popular .price-content ul .zmdi-check {
+  color: white !important;
+}
+.c-white{
+    color: white;
+}
+.h2{
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+h4, h2, span {
+    animation-name: movedown;
+    animation-duration: 2s;
+  }
+  
+  @keyframes movedown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  .contactinfo{
+    background-color: rgb(255, 255, 255) ;
+    padding: 2rem 1rem;
+  }
+  .contactinfo .title{
+    text-align: center;
+  }
+  .title h1{
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+
+  .title .slogan{
+    font-size: 1rem;
+    color: gray;
+  }
